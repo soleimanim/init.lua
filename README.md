@@ -1,7 +1,13 @@
-nvim configuration mainly focused on GoLang and Swift development
+My neovim configuration
+To change the colorscheme, edit the plugins/colorscheme.lua file.
 
+The following dependenies are required to access all features of the installed plugins.
 
 ### Dependencies
+
+#### Nerd Font
+Install one of the nerd font variations and change terminal font to it. Nerd Fonts are special fonts that include a wide range of icons and glyphs, which can enhance the visual appearance of your terminal and improve readability.
+[nerdfonts.com](https://www.nerdfonts.com/)
 
 #### fzf
 [Github](https://github.com/junegunn/fzf?tab=readme-ov-file#installation)
@@ -22,6 +28,10 @@ nvim configuration mainly focused on GoLang and Swift development
 [Github](https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation)
 
 `brew install ripgrep`
+<hr />
+
+## XCode features
+ignore the following dependencies if you do not need swift development.
 
 #### xcode-build-server
 [Github](https://github.com/SolaWing/xcode-build-server)
@@ -51,7 +61,9 @@ nvim configuration mainly focused on GoLang and Swift development
 #### lldb path
 edit `lua/lazy-nvim/plugins/nvim-dap.lua` and replace codelldb file path with the path of file in your computer
 for more information see [xcodebuild.nvim](https://github.com/wojciech-kulik/xcodebuild.nvim#-debugger-configuration)
+<hr />
 
+### Markdown dependencies
 #### (Optional) deno
 if you want to use markdown preview `deno` is required
 
