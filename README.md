@@ -1,4 +1,5 @@
 My neovim configuration
+
 To change the colorscheme, edit the plugins/colorscheme.lua file.
 
 The following dependenies are required to access all features of the installed plugins.
