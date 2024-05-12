@@ -36,7 +36,7 @@ return {
 	config = function()
 		require("nvim-tree").setup({
 			git = {
-				enable = false,
+				enable = true,
 			},
 			view = {
 				width = 60,
@@ -49,6 +49,13 @@ return {
 			renderer = {
 				indent_markers = {
 					enable = true,
+				},
+				icons = {
+					glyphs = {
+						git = {
+							untracked = "*",
+						},
+					},
 				},
 			},
 		})
