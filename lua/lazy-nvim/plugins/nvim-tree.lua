@@ -57,6 +57,9 @@ return {
 						},
 					},
 				},
+				highlight_git = "name",
+				highlight_diagnostics = "name",
+				highlight_opened_files = "icon",
 			},
 		})
 	end,
