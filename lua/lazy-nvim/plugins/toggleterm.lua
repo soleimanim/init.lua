@@ -41,6 +41,6 @@ return {
 			openDefaultTerminal("horizontal")
 		end, { desc = "Open Newe [H]orizontal Terminal" })
 		vim.keymap.set("n", "<leader>zt", "<Cmd>ToggleTermToggleAll<Cr>", { desc = "[T]oggle All Terminals" })
-		vim.keymap.set("t", "jj", [[<C-\><C-n>]], { desc = "To Normal Mode" })
+		vim.keymap.set("t", "<Esc><Esc>", [[<C-\><C-n>]], { desc = "To Normal Mode" })
 	end,
 }
