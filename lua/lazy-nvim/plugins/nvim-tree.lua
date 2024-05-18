@@ -22,7 +22,7 @@ end
 
 -- Keybindings
 vim.keymap.set("n", "<leader>ee", "<Cmd>NvimTreeToggle<CR>", { desc = "Toggle [E]xplorer" })
-vim.keymap.set("n", "<leader>ef", "<Cmd>NvimTreeFindFileToggle<CR>", { desc = "[E]xplore [F]ile" })
+vim.keymap.set("n", "<leader>ef", "<Cmd>NvimTreeFindFile<CR>", { desc = "[E]xplore [F]ile" })
 vim.keymap.set("n", "<leader>ec", "<Cmd>NvimTreeCollapse<CR>", { desc = "[E]xplore [C]ollapse" })
 vim.keymap.set("n", "<leader>sd", find_directory_and_focus, { desc = "[S]earch [D]irectories" })
 
@@ -39,7 +39,7 @@ return {
 				enable = true,
 			},
 			view = {
-				width = 60,
+				width = 45,
 				number = true,
 				relativenumber = true,
 				float = {
