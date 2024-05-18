@@ -26,3 +26,9 @@ vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left wind
 vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
 vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
 vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
+
+-- Split resizing
+vim.keymap.set("n", "<M-=>", "<Cmd>vertical resize +2<CR>", { desc = "Increase split width +2" })
+vim.keymap.set("n", "<M-->", "<Cmd>vertical resize -2<CR>", { desc = "Decrease split width -2" })
+vim.keymap.set("n", "<M-.>", "<Cmd>resize -1<CR>", { desc = "Decrease split height -1" })
+vim.keymap.set("n", "<M-,>", "<Cmd>resize +1<CR>", { desc = "Increase split height +1" })
