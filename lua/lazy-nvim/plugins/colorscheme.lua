@@ -8,10 +8,12 @@ return {
 			style = "light",
 			undercurl = false,
 			on_highlights = function(highlights, colors)
+				colors.green = "#3EA59C"
 				highlights.BufferCurrent.bg = colors.base1
 				highlights.BufferCurrent.fg = colors.bg1
 				highlights.BufferCurrentMod.fg = colors.bg1
 				highlights.PmenuSel.fg = colors.bg1
+				highlights.String.fg = colors.green
 			end,
 		})
 		vim.cmd([[colorscheme NeoSolarized]])
