@@ -16,6 +16,6 @@ return {
 				highlights.String.fg = colors.green
 			end,
 		})
-		vim.cmd([[colorscheme NeoSolarized]])
+		-- vim.cmd([[colorscheme NeoSolarized]])
 	end,
 }

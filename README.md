@@ -1,6 +1,6 @@
 My neovim configuration
 
-To change the colorscheme, edit the plugins/colorscheme.lua file.
+To modify the color scheme, add your favorite color schemes to Themery (located at lua/lazy-nvim/plugins/themery-nvim.lua). Then, open the theme switcher by using :Themery command and select your preferred color scheme.
 
 The following dependenies are required to access all features of the installed plugins.
 
