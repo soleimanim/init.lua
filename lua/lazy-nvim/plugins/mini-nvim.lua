@@ -35,5 +35,7 @@ return { -- Collection of various small independent plugins/modules
 
 		vim.api.nvim_create_user_command("SessionLoad", loadSession, { nargs = "?" })
 		vim.api.nvim_create_user_command("SessionWrite", writeSession, { nargs = "?" })
+		vim.keymap.set("n", "<leader>wsl", "<Cmd>SessionLoad<CR>", { desc = "[W]orkdpace [L]oad default [S]ession" })
+		vim.keymap.set("n", "<leader>wsw", "<Cmd>SessionWrite<CR>", { desc = "[W]orkdpace [W]rite default [S]ession" })
 	end,
 }
