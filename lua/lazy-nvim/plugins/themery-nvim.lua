@@ -22,6 +22,11 @@ return {
 								highlights.String.fg = colors.green
 							end,
 						})
+						require("lualine").setup({
+							options = {
+								theme = "NeoSolarized",
+							},
+						})
 						vim.opt.background = "light"
 				]],
 				},
@@ -33,8 +38,63 @@ return {
 							transparent = false,
 							style = "dark",
 						})
+
+						require("lualine").setup({
+							options = {
+								theme = "NeoSolarized",
+							},
+						})
+
 						vim.opt.background = "dark"
 				]],
+				},
+				{
+					name = "Catppuccin Latte",
+					colorscheme = "catppuccin-latte",
+					before = [[
+						require('lualine').setup {
+							options = {
+								theme = "catppuccin"
+								-- ... the rest of your lualine config
+							}
+						}
+					]],
+				},
+				{
+					name = "Catppuccin Frappe",
+					colorscheme = "catppuccin-frappe",
+					before = [[
+						require('lualine').setup {
+							options = {
+								theme = "catppuccin"
+								-- ... the rest of your lualine config
+							}
+						}
+					]],
+				},
+				{
+					name = "Catppuccin Macchiato",
+					colorscheme = "catppuccin-macchiato",
+					before = [[
+						require('lualine').setup {
+							options = {
+								theme = "catppuccin"
+								-- ... the rest of your lualine config
+							}
+						}
+					]],
+				},
+				{
+					name = "Catppuccin Mocha",
+					colorscheme = "catppuccin-mocha",
+					before = [[
+						require('lualine').setup {
+							options = {
+								theme = "catppuccin"
+								-- ... the rest of your lualine config
+							}
+						}
+					]],
 				},
 			},
 		})

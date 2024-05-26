@@ -13,6 +13,11 @@ highlights.PmenuSel.fg = colors.bg1
 highlights.String.fg = colors.green
 end,
 })
+require("lualine").setup({
+options = {
+theme = "NeoSolarized",
+},
+})
 vim.opt.background = "light"
 
 
