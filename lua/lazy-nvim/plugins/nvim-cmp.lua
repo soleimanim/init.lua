@@ -33,6 +33,7 @@ return { -- Autocompletion
 		--  into multiple repos for maintenance purposes.
 		"hrsh7th/cmp-nvim-lsp",
 		"hrsh7th/cmp-path",
+		"onsails/lspkind.nvim",
 	},
 	config = function()
 		-- See `:help cmp`
@@ -69,6 +70,13 @@ return { -- Autocompletion
 				--  This will expand snippets if the LSP sent a snippet.
 				["<C-y>"] = cmp.mapping.confirm({ select = true }),
 				["<CR>"] = cmp.mapping.confirm({ select = true }),
+				["<C-s>"] = cmp.mapping.complete({
+					config = {
+						sources = {
+							{ name = "codeium" },
+						},
+					},
+				}),
 
 				-- Think of <c-l> as moving to the right of your snippet expansion.
 				--  So if you have a snippet that's like:
@@ -96,7 +104,8 @@ return { -- Autocompletion
 				{ name = "nvim_lsp" },
 				{ name = "luasnip" },
 				{ name = "path" },
-				-- { name = "codeium" },
+				{ name = "codeium" },
+				{ name = "dotenv" },
 			},
 		})
 	end,
