@@ -53,6 +53,7 @@ return { -- Fuzzy Finder (files, lsp, etc)
 				mappings = {
 					n = { ["<m-p>"] = actions_layout.toggle_preview },
 				},
+				file_ignore_patterns = { "node_modules", ".git" },
 			},
 			pickers = {
 				colorscheme = {

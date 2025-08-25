@@ -1,26 +1,13 @@
 -- Themery block
 -- This block will be replaced by Themery.
-require("NeoSolarized").setup({
-transparent = false,
-style = "light",
-undercurl = false,
-on_highlights = function(highlights, colors)
-colors.green = "#3EA59C"
-highlights.BufferCurrent.bg = colors.base1
-highlights.BufferCurrent.fg = colors.bg1
-highlights.BufferCurrentMod.fg = colors.bg1
-highlights.PmenuSel.fg = colors.bg1
-highlights.String.fg = colors.green
-end,
-})
-require("lualine").setup({
+require('lualine').setup {
 options = {
-theme = "NeoSolarized",
-},
-})
-vim.opt.background = "light"
+theme = "catppuccin"
+-- ... the rest of your lualine config
+}
+}
 
 
-vim.cmd("colorscheme NeoSolarized")
-vim.g.theme_id = 1
+vim.cmd("colorscheme catppuccin-macchiato")
+vim.g.theme_id = 5
 -- end themery block

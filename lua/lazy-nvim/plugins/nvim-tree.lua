@@ -61,6 +61,10 @@ return {
 				highlight_diagnostics = "name",
 				highlight_opened_files = "icon",
 			},
+			filters = {
+				custom = { "node_modules" },
+				exclude = { ".env" },
+			},
 		})
 	end,
 }

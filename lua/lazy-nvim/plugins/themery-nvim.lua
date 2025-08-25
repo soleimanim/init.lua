@@ -20,6 +20,8 @@ return {
 								highlights.BufferCurrentMod.fg = colors.bg1
 								highlights.PmenuSel.fg = colors.bg1
 								highlights.String.fg = colors.green
+								vim.api.nvim_set_hl(0, "IblIndent", { fg = colors.bg1 })
+								vim.api.nvim_set_hl(0, "IblScope", { fg = colors.bg0 })
 							end,
 						})
 						require("lualine").setup({

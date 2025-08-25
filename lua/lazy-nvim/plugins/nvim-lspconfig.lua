@@ -114,7 +114,14 @@ return { -- LSP Configuration & Plugins
 		--        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
 		local servers = {
 			-- clangd = {},
-			gopls = {},
+			gopls = {
+				settings = {
+					gopls = {
+						codelenses = { test = true },
+						usePlaceholders = true,
+					},
+				},
+			},
 			pyright = {},
 			-- rust_analyzer = {},
 			-- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
@@ -125,6 +132,16 @@ return { -- LSP Configuration & Plugins
 			-- But for many setups, the LSP (`tsserver`) will work just fine
 			tsserver = {},
 			--
+			-- For css
+			cssls = {
+				settings = {
+					css = {
+						format = {
+							tabSize = 2,
+						},
+					},
+				},
+			},
 
 			lua_ls = {
 				-- cmd = {...},
@@ -139,6 +156,23 @@ return { -- LSP Configuration & Plugins
 						-- diagnostics = { disable = { 'missing-fields' } },
 					},
 				},
+			},
+			solidity = {
+				cmd = { "nomicfoundation-solidity-language-server", "--stdio" },
+				filetypes = { "solidity" },
+				root_dir = lspconfig.util.root_pattern(
+					"foundry.toml",
+					"hardhat.config.js",
+					"truffle-config.js",
+					".git"
+				),
+				single_file_support = true,
+				capabilities = capabilities,
+				on_attach = function(client)
+					-- disable formatting capability
+					client.server_capabilities.documentFormattingProvider = false
+					client.server_capabilities.documentRangeFormattingProvider = false
+				end,
 			},
 		}
 

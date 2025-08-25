@@ -71,3 +71,7 @@ if you want to use markdown preview `deno` is required
 [deno.com](https://deno.com/)
 
 `brew install deno`
+
+### Web development
+#### Css language servcer
+`npm i -g vscode-langservers-extracted`

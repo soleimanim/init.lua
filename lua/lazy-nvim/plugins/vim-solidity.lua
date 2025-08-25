@@ -1,0 +1,3 @@
+return {
+	"tomlion/vim-solidity",
+}

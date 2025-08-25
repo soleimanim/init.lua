@@ -14,7 +14,7 @@ vim.opt.relativenumber = true
 
 vim.opt.mouse = "a"
 vim.opt.showmode = false
-vim.opt.clipboard = "unnamedplus"
+-- vim.opt.clipboard = "unnamedplus"
 vim.opt.breakindent = true
 vim.opt.undofile = true
 
@@ -38,3 +38,4 @@ vim.opt.scrolloff = 10
 vim.opt.hlsearch = true
 
 vim.opt.background = "light"
+vim.opt.shortmess:append({ I = true })

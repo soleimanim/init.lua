@@ -1,4 +1,3 @@
--- this plugin is used for ui of buffer tabs
 
 local barbar = {
 	"romgrk/barbar.nvim",
